@@ -1,3 +1,4 @@
+import android.os.Bundle;
 package com.pokedex
 
 import com.facebook.react.ReactActivity
@@ -12,6 +13,11 @@ class MainActivity : ReactActivity() {
    * rendering of the component.
    */
   override fun getMainComponentName(): String = "pokedex"
+
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(null)
+  }
+
 
   /**
    * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
